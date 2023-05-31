@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercicios",
+  "info": {
+    "singularName": "exercicio",
+    "pluralName": "exercicios",
+    "displayName": "exercicio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "grupoMuscular": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "treinos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::treino.treino",
+      "mappedBy": "exercicios"
+    },
+    "consultar_treinos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::consultar-treino.consultar-treino",
+      "mappedBy": "exercicio"
+    }
+  }
+}

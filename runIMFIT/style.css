@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header, footer {
+    background-color: #f37100;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.container1 {
+    background-color: rgb(105, 105, 105);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: beige;
+    
+}
+
+.container2 {
+    background-color: rgb(105, 105, 105);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: beige;
+    margin-top: 30px;
+    
+}
+
+h1,h2, #dataForm, #deleteForm {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #F16C2D;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px #000000;
+}
+
+.button:hover{
+    background-color: #f16b2dd3;
+}
+
+.button:active{
+    transform: translate(3px, 3px);
+    box-shadow:  0px 0px;
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultar_treinos",
+  "info": {
+    "singularName": "consultar-treino",
+    "pluralName": "consultar-treinos",
+    "displayName": "consultarTreino"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TIpo_do_treino": {
+      "type": "string",
+      "required": true
+    },
+    "exercicio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exercicio.exercicio",
+      "inversedBy": "consultar_treinos"
+    }
+  }
+}

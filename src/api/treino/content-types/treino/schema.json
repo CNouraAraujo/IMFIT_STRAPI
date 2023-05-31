@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "treinos",
+  "info": {
+    "singularName": "treino",
+    "pluralName": "treinos",
+    "displayName": "treino",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "exercicios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exercicio.exercicio",
+      "inversedBy": "treinos"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "treino"
+    }
+  }
+}
